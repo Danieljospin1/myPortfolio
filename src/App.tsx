@@ -10,7 +10,7 @@ export default function App() {
     <div className="site">
       <header className="navbar">
         <a className="brand" href="#home" onClick={() => setMenuOpen(false)}>
-          <span className="brand-mark">BJ</span>
+          <span className="brand-mark"></span>
           <span>BISUBIZO Daniel Jospin</span>
         </a>
 
@@ -53,15 +53,15 @@ export default function App() {
               <a className="button button-primary" href="#projects">
                 View My Work <ArrowRight size={18} />
               </a>
-              <a className="button button-secondary" href="https://github.com/" target="_blank" rel="noreferrer">
+              <a className="button button-secondary" href="https://github.com/Danieljospin1" target="_blank" rel="noreferrer">
                 <Github size={18} /> GitHub
               </a>
             </div>
 
             <div className="social-links" aria-label="Social links">
-              <a href="#" aria-label="LinkedIn"><Linkedin size={20} /></a>
-              <a href="#" aria-label="GitHub"><Github size={20} /></a>
-              <a href="mailto:your-email@example.com" aria-label="Email"><Mail size={20} /></a>
+              <a href="https://www.linkedin.com/in/bisubizo-daniel-jospin-0b234129b/" aria-label="LinkedIn"><Linkedin size={20} /></a>
+              <a href="https://github.com/Danieljospin1" aria-label="GitHub"><Github size={20} /></a>
+              <a href="mailto:danieljospin087@gmail.com" aria-label="Email"><Mail size={20} /></a>
             </div>
           </div>
 
@@ -159,12 +159,12 @@ export default function App() {
           <div>
             <strong>Let's work together</strong>
             <span>Have a project, opportunity, or just want to connect?</span>
-            <a className="button button-primary" href="mailto:your-email@example.com">Get in touch <ArrowRight size={17} /></a>
+            <a className="button button-primary" href="mailto:danieljospin087@gmail.com">Get in touch <ArrowRight size={17} /></a>
           </div>
           <div className="footer-socials">
             <a href="#"><Github size={18} /> GitHub</a>
             <a href="#"><Linkedin size={18} /> LinkedIn</a>
-            <a href="mailto:your-email@example.com"><Mail size={18} /> Email</a>
+            <a href="mailto:danieljospin087@gmail.com"><Mail size={18} /> Email</a>
           </div>
         </footer>
       </main>
