@@ -2,6 +2,7 @@ import { ArrowRight, Github, Linkedin, Mail, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const navItems = ["Home", "Projects", "About", "Skills", "Contact"];
+const emailUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=danieljospin087@gmail.com";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ export default function App() {
       <header className="navbar">
         <a className="brand" href="#home" onClick={() => setMenuOpen(false)}>
           <span className="brand-mark"></span>
-          <span>BISUBIZO Daniel Jospin</span>
+          <img src="../public/logo.jpg" alt="BISUBIZO Daniel Jospin" style={{width:50,height:60,marginTop:15}}/>
         </a>
 
         <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
@@ -61,7 +62,7 @@ export default function App() {
             <div className="social-links" aria-label="Social links">
               <a href="https://www.linkedin.com/in/bisubizo-daniel-jospin-0b234129b/" aria-label="LinkedIn"><Linkedin size={20} /></a>
               <a href="https://github.com/Danieljospin1" aria-label="GitHub"><Github size={20} /></a>
-              <a href="mailto:danieljospin087@gmail.com" aria-label="Email"><Mail size={20} /></a>
+              <a href={emailUrl} target="_blank" rel="noreferrer" aria-label="Email"><Mail size={20} /></a>
             </div>
           </div>
 
@@ -94,7 +95,11 @@ export default function App() {
                   <span>React Native</span><span>Expo</span><span>SQLite</span>
                 </div>
               </div>
-              <div className="mock-phone"><span>MyDecor</span><strong>Bookings</strong><small>Client booking</small><small>Payment status</small></div>
+              <div className="mock-phone">
+                <div className="mock-phone-screen">
+                  <img src="../public/myBooking.jpeg" alt="MyDecor app mockup" />
+                </div>
+              </div>
             </article>
 
             <article className="project-card project-card-lilac">
@@ -109,7 +114,11 @@ export default function App() {
                   <span>React Native</span><span>Node.js</span><span>Socket.IO</span><span>MySQL</span>
                 </div>
               </div>
-              <div className="mock-phone"><span>AUCA App</span><strong>Announcements</strong><small>University update</small><small>Registration reminder</small></div>
+              <div className="mock-phone">
+                <div className="mock-phone-screen">
+                  <img src="../public/aucaApp.jpeg" alt="AUCA App mockup" />
+                </div>
+              </div>
             </article>
           </div>
         </section>
@@ -159,12 +168,12 @@ export default function App() {
           <div>
             <strong>Let's work together</strong>
             <span>Have a project, opportunity, or just want to connect?</span>
-            <a className="button button-primary" href="mailto:danieljospin087@gmail.com">Get in touch <ArrowRight size={17} /></a>
+            <a className="button button-primary" href={emailUrl} target="_blank" rel="noreferrer">Get in touch <ArrowRight size={17} /></a>
           </div>
           <div className="footer-socials">
             <a href="#"><Github size={18} /> GitHub</a>
             <a href="#"><Linkedin size={18} /> LinkedIn</a>
-            <a href="mailto:danieljospin087@gmail.com"><Mail size={18} /> Email</a>
+            <a href={emailUrl} target="_blank" rel="noreferrer"><Mail size={18} /> Email</a>
           </div>
         </footer>
       </main>

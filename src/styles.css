@@ -80,7 +80,7 @@ button { font: inherit; }
 .section-intro { color: var(--muted); margin: 0 0 30px; }
 
 .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
-.project-card { min-height: 355px; border-radius: 8px; padding: 28px; display: grid; grid-template-columns: 1fr 150px; gap: 15px; overflow: hidden; }
+.project-card { min-height: 390px; border-radius: 8px; padding: 28px; display: grid; grid-template-columns: 1fr 180px; gap: 15px; overflow: hidden; }
 .project-card-teal { background: var(--teal-bg); }
 .project-card-lilac { background: var(--lilac-bg); }
 .project-label { text-transform: uppercase; letter-spacing: .14em; font-size: 9px; color: var(--muted); margin: 0 0 17px; }
@@ -88,7 +88,10 @@ button { font: inherit; }
 .project-card p { color: #536171; font-size: 13px; line-height: 1.65; margin: 0; }
 .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 20px; }
 .tags span { background: rgba(255,255,255,.75); border-radius: 99px; padding: 7px 9px; font-size: 9px; color: #465464; }
-.mock-phone { align-self: center; justify-self: center; width: 132px; height: 255px; border: 7px solid #18202a; border-radius: 22px; background: white; box-shadow: 0 12px 30px rgba(25,35,45,.16); padding: 20px 10px 10px; display: flex; flex-direction: column; gap: 10px; font-size: 9px; }
+.mock-phone { align-self: center; justify-self: center; width: 170px; height: 320px; border: 8px solid #18202a; border-radius: 27px; background: #18202a; box-shadow: 0 12px 30px rgba(25,35,45,.16); padding: 24px 6px 6px; overflow: hidden; position: relative; }
+.mock-phone::before { content: ""; position: absolute; top: 7px; left: 50%; width: 32px; height: 4px; border-radius: 99px; background: #18202a; transform: translateX(-50%); z-index: 2; }
+.mock-phone-screen { width: 100%; height: 100%; overflow: hidden; border-radius: 10px; background: #fff; }
+.mock-phone-screen img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; }
 .mock-phone span { font-weight: 800; font-size: 11px; }
 .mock-phone strong { font-size: 12px; margin-top: 7px; }
 .mock-phone small { border: 1px solid #e9ebee; border-radius: 7px; padding: 9px 6px; color: #637080; }
@@ -137,7 +140,7 @@ button { font: inherit; }
   .hero-description { font-size: 14px; }
 
   .project-grid, .education-grid { grid-template-columns: 1fr; }
-  .project-card { grid-template-columns: 1fr 135px; min-height: 325px; padding: 22px; }
+  .project-card { grid-template-columns: 1fr 155px; min-height: 370px; padding: 22px; }
   .placeholder-section { padding-top: 58px; padding-bottom: 58px; }
   .placeholder-section h2, .approach-section h2 { font-size: 31px; }
 
@@ -156,6 +159,6 @@ button { font: inherit; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .button { width: 100%; }
   .project-card { grid-template-columns: 1fr; }
-  .mock-phone { margin-top: 8px; }
+  .mock-phone { width: 155px; height: 292px; margin-top: 8px; }
   .principles { grid-template-columns: 1fr; }
 }
