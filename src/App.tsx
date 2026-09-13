@@ -12,7 +12,7 @@ export default function App() {
       <header className="navbar">
         <a className="brand" href="#home" onClick={() => setMenuOpen(false)}>
           <span className="brand-mark"></span>
-          <img src="../public/logo.jpg" alt="BISUBIZO Daniel Jospin" style={{width:50,height:60,marginTop:15}}/>
+          <img src="/logo.jpg" alt="BISUBIZO Daniel Jospin" style={{width:50,height:60,marginTop:15}}/>
         </a>
 
         <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
@@ -97,7 +97,7 @@ export default function App() {
               </div>
               <div className="mock-phone">
                 <div className="mock-phone-screen">
-                  <img src="../public/myBooking.jpeg" alt="MyDecor app mockup" />
+                  <img src="/myBooking.jpeg" alt="MyDecor app mockup" />
                 </div>
               </div>
             </article>
@@ -116,7 +116,7 @@ export default function App() {
               </div>
               <div className="mock-phone">
                 <div className="mock-phone-screen">
-                  <img src="../public/aucaApp.jpeg" alt="AUCA App mockup" />
+                  <img src="/aucaApp.jpeg" alt="AUCA App mockup" />
                 </div>
               </div>
             </article>
