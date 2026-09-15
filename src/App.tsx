@@ -12,7 +12,7 @@ export default function App() {
       <header className="navbar">
         <a className="brand" href="#home" onClick={() => setMenuOpen(false)}>
           <span className="brand-mark"></span>
-          <img src="/logo.jpg" alt="BISUBIZO Daniel Jospin" style={{width:50,height:60,marginTop:15}}/>
+          <img src="/logo.jpg" alt="BISUBIZO Daniel Jospin" style={{ width: 50, height: 60, marginTop: 15 }} />
         </a>
 
         <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
@@ -57,6 +57,9 @@ export default function App() {
               <a className="button button-secondary" href="https://github.com/Danieljospin1" target="_blank" rel="noreferrer">
                 <Github size={18} /> GitHub
               </a>
+              <a className="button button-primary" href="https://docs.google.com/document/d/1Nm2BSlaiKhm32Na4WhesSV63-PyvYS60wRlXhG71TQM/edit?usp=sharing">
+                CV
+              </a>
             </div>
 
             <div className="social-links" aria-label="Social links">
@@ -64,6 +67,7 @@ export default function App() {
               <a href="https://github.com/Danieljospin1" aria-label="GitHub"><Github size={20} /></a>
               <a href={emailUrl} target="_blank" rel="noreferrer" aria-label="Email"><Mail size={20} /></a>
             </div>
+
           </div>
 
           <div className="hero-visual">
